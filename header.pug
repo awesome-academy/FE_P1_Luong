@@ -4,21 +4,25 @@ head
   meta(charset='UTF-8')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
   title Machine Company
+  
+  link(rel='stylesheet', href='../scss/responsive.css')
   link(rel='stylesheet', href='../scss/header.css')
+  link(rel='stylesheet', href='../scss/layout.css')
 header
   .top-header
     // Social media / login-sign up
     .container
-      .social-media
-        +social-media('../images/socials/facebook.png', 'facebook-icon')
-        +social-media('../images/socials/google-plus.png', 'google-plus-icon')
-        +social-media('../images/socials/instagram.png', 'instagram-icon')
-        +social-media('../images/socials/twitter.png', 'twitter-icon')
-      .login-sign-up
-        .login-sign-up__item
-          a(href='') Đăng ký
-        .login-sign-up__item
-          a(href='') Đăng nhập
+      .row
+        .social-media
+          +social-media('../images/socials/facebook.png', 'facebook-icon')
+          +social-media('../images/socials/google-plus.png', 'google-plus-icon')
+          +social-media('../images/socials/instagram.png', 'instagram-icon')
+          +social-media('../images/socials/twitter.png', 'twitter-icon')
+        .login-sign-up
+          .login-sign-up__item
+            a(href='') Đăng ký
+          .login-sign-up__item
+            a(href='') Đăng nhập
   // logo brand
   .container
     .main-header
@@ -43,9 +47,12 @@ header
         img(src='../images/search-icon.png', alt='search-icon')
   // Navigation
   nav.navbar-wrapper
-    .container
+    .container   
       .navbar
-        ul
+        input(type="checkbox")#menuToggle
+        label(for="menuToggle").menu-icon
+          img(src="../images/menu-icon.png", alt="menu icon")
+        ul.navbar__menu
             li.navbar__item.navbar--active
                 a(href="#") Trang chủ
             +navbar-item('Giới thiệu')
@@ -56,3 +63,4 @@ header
         .cart
             img(src='../images/cart.png', alt='cart')
             .cart__number 0
+

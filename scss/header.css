@@ -1,14 +1,11 @@
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; }
+body {
+  margin: 0;
+  padding: 0; }
 
 a {
   text-decoration: none; }
 
-header .top-header .container .social-media .social-media__item, header .top-header .container .login-sign-up .login-sign-up__item, header .main-header .wrapper-contacts, header .main-header .search-information, header nav.navbar-wrapper .navbar .cart .cart__number {
+header .top-header .container .social-media__item, header .top-header .container .login-sign-up__item, header .main-header .wrapper-contacts, header .main-header .search-information, header nav.navbar-wrapper .navbar .cart__number {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -17,17 +14,15 @@ header .top-header {
   height: 50px;
   border-bottom: 1px solid #e1e1e1;
   position: relative;
-  top: -8px;
   background-color: #f7f7f7; }
   header .top-header .container {
-    display: flex;
     position: relative; }
     header .top-header .container .social-media {
       display: flex; }
-      header .top-header .container .social-media .social-media__item:first-child {
+      header .top-header .container .social-media__item:first-child {
         border-left: 1px solid #e1e1e1;
         background-color: #f5bd10; }
-      header .top-header .container .social-media .social-media__item {
+      header .top-header .container .social-media__item {
         width: 50px;
         height: 50px;
         border-bottom: 1px solid #e1e1e1;
@@ -36,15 +31,15 @@ header .top-header {
       position: absolute;
       right: 0;
       display: flex; }
-      header .top-header .container .login-sign-up .login-sign-up__item:first-child {
+      header .top-header .container .login-sign-up__item:first-child {
         border-left: 1px solid #e1e1e1; }
-      header .top-header .container .login-sign-up .login-sign-up__item {
+      header .top-header .container .login-sign-up__item {
         font-size: 12px;
         font-weight: bold;
         text-transform: uppercase;
         padding: 18px;
         border-right: 1px solid #e1e1e1; }
-        header .top-header .container .login-sign-up .login-sign-up__item a {
+        header .top-header .container .login-sign-up__item a {
           color: #363636; }
 header .main-header {
   display: flex;
@@ -58,14 +53,14 @@ header .main-header {
     flex: 2; }
     header .main-header .wrapper-contacts .contacts {
       margin-right: 60px; }
-      header .main-header .wrapper-contacts .contacts .contacts__title {
+      header .main-header .wrapper-contacts .contacts__title {
         color: #f7cb5e;
         font-weight: bold;
         text-transform: uppercase;
         font-size: 14px; }
-      header .main-header .wrapper-contacts .contacts .contacts__info {
+      header .main-header .wrapper-contacts .contacts__info {
         font-size: 13px; }
-        header .main-header .wrapper-contacts .contacts .contacts__info a {
+        header .main-header .wrapper-contacts .contacts__info a {
           color: #9c9c9c; }
   header .main-header .search-information {
     flex: 1;
@@ -118,7 +113,7 @@ header nav.navbar-wrapper {
         width: 22px;
         height: 21px;
         cursor: pointer; }
-      header nav.navbar-wrapper .navbar .cart .cart__number {
+      header nav.navbar-wrapper .navbar .cart__number {
         position: absolute;
         top: 6.5px;
         right: 6.5px;
@@ -128,18 +123,5 @@ header nav.navbar-wrapper {
         color: #ffffff;
         width: 22px;
         height: 22px; }
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px; } }
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px; } }
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px; } }
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px; } }
 
 /*# sourceMappingURL=header.css.map */

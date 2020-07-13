@@ -1,11 +1,7 @@
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+body {
+    margin: 0;
+    padding: 0;
 }
-
 a {
     text-decoration: none;
 }
@@ -23,18 +19,16 @@ header {
         height: 50px;
         border-bottom: $primary-border;
         position: relative; // chỉnh vị trí so với chính nó
-        top: -8px;
         background-color: #f7f7f7;
         .container {
-            display: flex;
             position: relative;
             .social-media {
                 display: flex;
-                .social-media__item:first-child {
+                &__item:first-child {
                     border-left: $primary-border;
                     background-color: #f5bd10;
                 }
-                .social-media__item {
+                &__item {
                     width: 50px;
                     height: 50px;
                     border-bottom: $primary-border;
@@ -47,10 +41,10 @@ header {
                 position: absolute; // chỉnh vị trí so với position relative gần nhất
                 right: 0;
                 display: flex;
-                .login-sign-up__item:first-child {
+                &__item:first-child {
                     border-left: $primary-border;
                 }
-                .login-sign-up__item {
+                &__item {
                     font-size: 12px;
                     font-weight: bold;
                     text-transform: uppercase;
@@ -81,13 +75,13 @@ header {
             @extend %flexCenter;
             .contacts {
                 margin-right: 60px;
-                .contacts__title {
+                &__title {
                     color: #f7cb5e;
                     font-weight: bold;
                     text-transform: uppercase;
                     font-size: 14px;
                 }
-                .contacts__info {
+                &__info {
                     a {
                         color: #9c9c9c;
                     }
@@ -160,7 +154,7 @@ header {
                     cursor: pointer;
                 }
 
-                .cart__number {
+                &__number {
                     position: absolute;
                     top: 6.5px;
                     right: 6.5px;
@@ -174,29 +168,5 @@ header {
                 }
             }
         }
-    }
-}
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
     }
 }
