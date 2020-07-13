@@ -46,12 +46,13 @@ header
     .container
       .navbar
         ul
-          +navbar-item('Trang Chủ').navbar--actcive
-          +navbar-item('Giới thiệu')
-          +navbar-item('Sản phẩm')
-          +navbar-item('Tin khuyến mại')
-          +navbar-item('Dịch vụ')
-          +navbar-item('Liên hệ')
+            li.navbar__item.navbar--active
+                a(href="#") Trang chủ
+            +navbar-item('Giới thiệu')
+            +navbar-item('Sản phẩm')
+            +navbar-item('Tin khuyến mại')
+            +navbar-item('Dịch vụ')
+            +navbar-item('Liên hệ')
         .cart
-          img(src='../images/cart.png', alt='cart')
-          .cart__number 0
+            img(src='../images/cart.png', alt='cart')
+            .cart__number 0
