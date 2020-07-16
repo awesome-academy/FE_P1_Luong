@@ -23,3 +23,17 @@ mixin article(src, alt, title)
                 img(src=src, alt=alt)
             a(href="#")=title
 
+mixin slider-sidebar(src, alt, title, desc)
+    .slider__sidebar__detail
+              img(src=src, alt=alt)
+              .slider__sidebar__detail__info
+                .title=title
+                .desc=desc
+
+mixin slider-sidebar--active(src, alt, title, desc)
+    .slider__sidebar__detail.slider__sidebar__detail--active
+              img(src=src, alt=alt)
+              .slider__sidebar__detail__info
+                .title=title
+                .desc=desc
+

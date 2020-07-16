@@ -7,10 +7,51 @@ head
   
   link(rel='stylesheet', href='../scss/responsive.css')
   link(rel='stylesheet', href='../scss/header.css')
+  link(rel='stylesheet', href='../scss/style.css')
   link(rel='stylesheet', href='../scss/footer.css')
   link(rel='stylesheet', href='../scss/layout.css')  
 
 body
     include header.pug
-    
+
+    .slider
+      .container
+        .row
+          .col-12.col-lg-8.slider__col
+            .carousel
+              .carousel__inner
+                input#carousel-1.carousel__open(type='radio', name='carousel', aria-hidden='true', checked='checked')
+                .carousel__item
+                  img(src='../images/SLIDER.jpg')
+                input#carousel-2.carousel__open(type='radio', name='carousel', aria-hidden='true')
+                .carousel__item
+                  img(src='../images/SLIDER.jpg')
+                input#carousel-3.carousel__open(type='radio', name='carousel', aria-hidden='true')
+                .carousel__item
+                  img(src='../images/SLIDER.jpg')
+                ol.carousel__indicators
+                  li
+                    label.carousel__bullet(for='carousel-1') &bull;
+                  li
+                    label.carousel__bullet(for='carousel-2') &bull;
+                  li
+                    label.carousel__bullet(for='carousel-3') &bull;
+
+          .col-12.col-lg-4.slider__sidebar
+            +slider-sidebar('../images/plane.png', 'plane',
+            'Miễn phí vận chuyển',
+            'Chúng tôi vận chuyển miễn phí với các đơn hàng trị giá trên 1000.000 Đ.')
+            +slider-sidebar--active('../images/reload.png', 'plane',
+            'Chính sách đổi trả',
+            'Nếu phát hiện lỗi của nhà sản xuất, chúng tôi sẽ đổi mới sản phẩm trong 7 ngày đầu tiên.')
+            +slider-sidebar('../images/plane.png', 'plane',
+            'Khuyến mại hàng tuần',
+            'Chúng tôi vận chuyển miễn phí với các đơn hàng trị giá trên 1000.000 Đ.')
+            +slider-sidebar('../images/plane.png', 'plane',
+            'Cam kết hàng chính hãng',
+            'Chúng tôi vận chuyển miễn phí với các đơn hàng trị giá trên 1000.000 Đ.')
+
+              
+
+
     include footer.pug
