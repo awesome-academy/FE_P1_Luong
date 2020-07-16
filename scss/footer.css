@@ -1,0 +1,32 @@
+footer .container .row .links__title, footer .container .row .links__icon, footer .container .row .links__item.link {
+  display: flex; }
+
+footer .container .wrap-links {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 65px; }
+footer .container .row .links__title {
+  margin-top: 60px;
+  margin-bottom: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase; }
+  footer .container .row .links__title img {
+    width: 12px; }
+footer .container .row .links__desc {
+  font-size: 13px;
+  color: #636363;
+  margin-bottom: 40px; }
+footer .container .row .links__icon {
+  font-size: 13px;
+  color: #636363;
+  margin-bottom: 25px; }
+footer .container .row .links__item {
+  font-size: 13px;
+  margin-bottom: 20px; }
+  footer .container .row .links__item a {
+    color: #636363; }
+footer .container .row .links .wrap-icon {
+  width: 30px;
+  height: auto; }
+
+/*# sourceMappingURL=footer.css.map */
