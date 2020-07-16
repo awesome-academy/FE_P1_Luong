@@ -52,5 +52,61 @@ footer {
                 }
             }
         }
+
+        .wrap-credit-card {
+            margin: 30px -15px 50px -15px;
+            .credit-card {
+                &__title {
+                    margin-bottom: 25px;
+                    font-size: 13px;
+                    color: #636363;
+                }
+            }
+
+            .hotline {
+                .hotline__row {
+                    padding-top: 16px;
+                }
+                &__col {
+                    &__item {
+                        display: flex;
+
+                        &__sub {
+                            margin: auto;
+                            margin-left: 10px;
+                            &__text {
+                                font-size: 13px;
+                                color: #636363;
+                            }
+                            &__number {
+                                font-size: 18px;
+                                font-weight: bold;
+                                color: #ff0000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        .container {
+            .wrap-credit-card {
+                .credit-card {
+                    &__title {
+                        margin-left: 15px;
+                    }
+                }
+
+                .hotline {
+                    &__col {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
     }
 }

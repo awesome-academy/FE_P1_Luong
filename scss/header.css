@@ -49,7 +49,7 @@ header .top-header {
         font-size: 12px;
         font-weight: bold;
         text-transform: uppercase;
-        padding: 18px;
+        padding: 16px;
         border-right: 1px solid #e1e1e1; }
         header .top-header .container .login-sign-up__item a {
           color: #363636; }
@@ -116,11 +116,11 @@ header nav.navbar-wrapper {
         background-color: #f5bd10; }
     header nav.navbar-wrapper .navbar .cart {
       position: absolute;
-      top: 5px;
+      top: 0;
       right: 0;
       border-left: 1px solid #363636;
       border-right: 1px solid #363636;
-      padding: 20px; }
+      padding: 22px; }
       header nav.navbar-wrapper .navbar .cart img {
         width: 22px;
         height: 21px;

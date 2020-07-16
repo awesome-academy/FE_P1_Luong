@@ -13,6 +13,10 @@ mixin list(...items)
         .links__item
             a(href="#")=item
 
+mixin credit-card(src, alt)
+    .col-6.col-md-4.col-lg-3.creadit-card__item
+        img(src=src, alt=alt)
+
 mixin article(src, alt, title)
         .links__item.link
             .wrap-icon
