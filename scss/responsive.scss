@@ -88,6 +88,7 @@
                 #menuToggle:checked ~ ul {
                     max-height: 350px;
                     height: auto;
+                    z-index: 1;
                 }
             }
         }

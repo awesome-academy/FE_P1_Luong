@@ -60,7 +60,8 @@
           padding: 10px 0px 10px 5%; }
       header nav.navbar-wrapper div.navbar #menuToggle:checked ~ ul {
         max-height: 350px;
-        height: auto; }
+        height: auto;
+        z-index: 1; }
   header div.main-header {
     display: block; }
     header div.main-header .logo-brand img {
