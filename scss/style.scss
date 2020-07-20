@@ -228,7 +228,17 @@ div.sidebar-container {
         }
     }
 }
+.product-container.product-95 {
+    height: 95.5%;
 
+    .product {
+        height: 97.5%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
 .product-container {
     margin-bottom: 30px;
 
@@ -282,6 +292,7 @@ div.sidebar-container {
 }
 
 .new-product-container {
+    margin-bottom: 60px;
     .wrap-next {
         .next-prev {
             display: flex;
