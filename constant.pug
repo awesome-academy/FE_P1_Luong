@@ -76,6 +76,21 @@ mixin product(src, alt, price, name, href1, btn1, href2, btn2)
                 a(href=href1).buy-now=btn1
                 a(href=href2).view-detail=btn2
 
+mixin product2(src, alt, name, desc, price,  href1, btn1, href2, btn2)
+    .product
+        .product__item
+            .product__img
+                img(src=src, alt=alt)
+            .product-inner  
+                .product__name=name 
+                +rating 
+                .desc=desc
+                .product__price=price
+                .product__btn
+                    a(href=href1).buy-now=btn1
+                    a(href=href2).view-detail=btn2
+                    
+
 mixin tab-btn
     button.tab__btn.tab__btn--active Máy khoan
     button.tab__btn Máy in 3D
