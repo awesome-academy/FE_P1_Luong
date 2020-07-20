@@ -37,3 +37,41 @@ mixin slider-sidebar--active(src, alt, title, desc)
                 .title=title
                 .desc=desc
 
+mixin title-genral(src=src, alt=alt, title)
+    .wrap-title-general
+        .wrap-four-icon
+            img(src=src, alt=alt).four-icon
+        .title-general=title
+
+mixin sidebar-item(src, alt, href, title)
+    .sidebar__item
+        .wrap-four-icon
+            img(src=src, alt=alt).four-icon
+        a(href=href).title=title
+
+mixin sidebar-item--active(src, alt, href, title)
+    .sidebar__item.sidebar__item--active
+        .wrap-four-icon
+            img(src=src, alt=alt).four-icon
+        a(href=href).title=title
+
+mixin rating
+    .rating-container
+        .rating.rating2
+            a(href='#5', title='Give 5 stars').rating__item &starf;
+            a(href='#4', title='Give 4 stars').rating__item &starf;
+            a(href='#3', title='Give 3 stars').rating__item &starf;
+            a(href='#2', title='Give 2 stars').rating__item &starf;
+            a(href='#1', title='Give 1 star').rating__item &starf;
+        .rating-number (12 đánh giá)
+
+mixin product(src, alt, price, name, href1, btn1, href2, btn2)
+    .product
+        .product__item
+            img(src=src, alt=alt)
+            .product__price=price
+            .product__name=name
+            +rating
+            .product__btn
+                a(href=href1).buy-now=btn1
+                a(href=href2).view-detail=btn2
