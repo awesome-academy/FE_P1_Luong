@@ -75,3 +75,10 @@ mixin product(src, alt, price, name, href1, btn1, href2, btn2)
             .product__btn
                 a(href=href1).buy-now=btn1
                 a(href=href2).view-detail=btn2
+
+mixin tab-btn
+    button.tab__btn.tab__btn--active Máy khoan
+    button.tab__btn Máy in 3D
+    button.tab__btn Máy CNC
+    button.tab__btn Máy tiện
+    button.tab__btn Máy khác

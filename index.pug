@@ -119,8 +119,41 @@ body
                   'Máy khoan black decker',
                   '#', 'Mua ngay', '#', 'Xem chi tiết')
 
+    .container
+      .new-product-container
+        .row
+          .wrap-next
+            +title-genral('../images/four-square.png', 
+            'four square icon', 
+            'Sản phẩm Mới')
+            .tab
+                +tab-btn
+            .next-prev
+              button.next-prev__btn &#10094;
+              button.next-prev__btn &#10095;
+        .row
+          .col-12.col-sm-6.col-md-4.product-container
+            +product('../images/product.jpg',
+              'product', '1.550.000 Đ', 
+              'Máy khoan black decker',
+              '#', 'Mua ngay', '#', 'Xem chi tiết')
+          .col-12.col-sm-6.col-md-4.product-container
+            +product('../images/product.jpg',
+              'product', '1.550.000 Đ', 
+              'Máy khoan black decker',
+              '#', 'Mua ngay', '#', 'Xem chi tiết')
+          .col-12.col-sm-6.col-md-4.product-container
+            +product('../images/product.jpg',
+              'product', '1.550.000 Đ', 
+              'Máy khoan black decker',
+              '#', 'Mua ngay', '#', 'Xem chi tiết')
+        .row.banner
+          .col-12.col-md-6
+            img(src="../images/banner1.jpg", alt="banner")
+          .col-12.col-md-6
+            img(src="../images/banner2.jpg", alt="banner")
 
-
+    
 
               
 
