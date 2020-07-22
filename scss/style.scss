@@ -471,6 +471,47 @@ div.sidebar-container {
     }
 }
 
+.breadcrumb-container {
+    height: 225px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.5) 100%), url("../images/breadcrumb.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .breadcrumb {
+        &__title {
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        &__fill {
+            text-align: center;
+            &__input {
+                padding: 12px 20px;
+                border-radius: 20px;
+                border: 1px solid #fff;
+                outline: none;
+                width: 600px;
+            }
+            &__btn {
+                cursor: pointer;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: #f5bd10;
+                padding: 12px 20px;
+                margin-left: 5px;
+                border: 1px solid #f5bd10;
+                border-radius: 20px;
+                outline: none;
+            }
+            &__btn:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .slider {
         .container {
@@ -491,5 +532,25 @@ div.sidebar-container {
 
     .tab {
         display: none;
+    }
+    .sub-slider-container {
+        display: none;
+    }
+    .breadcrumb-container {
+        height: 170px;
+        .breadcrumb {
+            &__title {
+                font-size: 16px;
+            }
+            &__fill {
+                &__input {
+                    width: 200px;
+                }
+                &__btn {
+                }
+                &__btn:hover {
+                }
+            }
+        }
     }
 }
