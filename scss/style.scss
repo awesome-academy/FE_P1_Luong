@@ -191,6 +191,7 @@
 div.sidebar-container {
     padding-left: 7px;
     .sidebar {
+        margin-bottom: 30px;
         &__item:first-child {
             border-top: 1px solid #ebebeb;
         }
@@ -224,6 +225,36 @@ div.sidebar-container {
             .title {
                 font-size: 13px;
                 color: #898989;
+            }
+        }
+
+        &__sale {
+            height: 120px;
+            width: 100%;
+            .wrap-four-icon {
+                width: 33%;
+                text-align: center;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .info {
+                width: 67%;
+                text-align: start;
+                padding-left: 10;
+                .title {
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: #202020;
+                }
+
+                .price {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #ff0000;
+                }
             }
         }
     }

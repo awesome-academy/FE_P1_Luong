@@ -54,6 +54,14 @@ mixin sidebar-item--active(src, alt, href, title)
         .wrap-four-icon
             img(src=src, alt=alt).four-icon
         a(href=href).title=title
+    
+mixin sidebar-sale(src, alt, href, title, price)
+    .sidebar__item.sidebar__sale
+        .wrap-four-icon
+            img(src=src, alt=alt).four-icon
+        .info
+            a(href=href).title=title
+            .price=price
 
 mixin rating
     .rating-container
@@ -97,3 +105,6 @@ mixin tab-btn
     button.tab__btn Máy CNC
     button.tab__btn Máy tiện
     button.tab__btn Máy khác
+
+
+            

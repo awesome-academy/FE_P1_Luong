@@ -134,29 +134,52 @@
 
 div.sidebar-container {
   padding-left: 7px; }
-  div.sidebar-container .sidebar__item:first-child {
-    border-top: 1px solid #ebebeb; }
-  div.sidebar-container .sidebar__item:last-child {
-    border-bottom: 1px solid #ebebeb; }
-  div.sidebar-container .sidebar__item--active {
-    background-color: #000; }
-    div.sidebar-container .sidebar__item--active .title {
-      color: #f5bd10 !important; }
-  div.sidebar-container .sidebar__item {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    border-bottom: 1px solid #ebebeb;
-    border-left: 1px solid #ebebeb;
-    border-right: 1px solid #ebebeb; }
-    div.sidebar-container .sidebar__item .wrap-four-icon {
-      width: 30px;
-      margin-left: 5px; }
-    div.sidebar-container .sidebar__item .four-icon {
-      width: 12px; }
-    div.sidebar-container .sidebar__item .title {
-      font-size: 13px;
-      color: #898989; }
+  div.sidebar-container .sidebar {
+    margin-bottom: 30px; }
+    div.sidebar-container .sidebar__item:first-child {
+      border-top: 1px solid #ebebeb; }
+    div.sidebar-container .sidebar__item:last-child {
+      border-bottom: 1px solid #ebebeb; }
+    div.sidebar-container .sidebar__item--active {
+      background-color: #000; }
+      div.sidebar-container .sidebar__item--active .title {
+        color: #f5bd10 !important; }
+    div.sidebar-container .sidebar__item {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      border-bottom: 1px solid #ebebeb;
+      border-left: 1px solid #ebebeb;
+      border-right: 1px solid #ebebeb; }
+      div.sidebar-container .sidebar__item .wrap-four-icon {
+        width: 30px;
+        margin-left: 5px; }
+      div.sidebar-container .sidebar__item .four-icon {
+        width: 12px; }
+      div.sidebar-container .sidebar__item .title {
+        font-size: 13px;
+        color: #898989; }
+    div.sidebar-container .sidebar__sale {
+      height: 120px;
+      width: 100%; }
+      div.sidebar-container .sidebar__sale .wrap-four-icon {
+        width: 33%;
+        text-align: center; }
+        div.sidebar-container .sidebar__sale .wrap-four-icon img {
+          width: 100%; }
+      div.sidebar-container .sidebar__sale .info {
+        width: 67%;
+        text-align: start;
+        padding-left: 10; }
+        div.sidebar-container .sidebar__sale .info .title {
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #202020; }
+        div.sidebar-container .sidebar__sale .info .price {
+          font-size: 14px;
+          font-weight: bold;
+          color: #ff0000; }
 
 .product-container.product-95 {
   height: 95.5%; }
