@@ -106,3 +106,16 @@ div.category-container {
         }
     }
 }
+
+@media (max-width: 768px) {
+    div.category-container {
+        .product-category {
+            margin-bottom: 60px;
+            border-bottom: none;
+            .show-type {
+                left: 0;
+                top: 60px;
+            }
+        }
+    }
+}

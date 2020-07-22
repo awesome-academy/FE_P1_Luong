@@ -72,4 +72,12 @@ div.category-container {
       color: #fff;
       background-color: #f5bd10; }
 
+@media (max-width: 768px) {
+  div.category-container .product-category {
+    margin-bottom: 60px;
+    border-bottom: none; }
+    div.category-container .product-category .show-type {
+      left: 0;
+      top: 60px; } }
+
 /*# sourceMappingURL=list-page.css.map */
