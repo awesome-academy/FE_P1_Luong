@@ -234,4 +234,40 @@ body
                '1.550.000 Đ',
               '#', 'Mua ngay', '#', 'Xem chi tiết')
 
+    .sub-slider-container
+      .container
+        .row
+          .col-12
+            .sub-carousel
+              .sub-carousel-inner
+                input#sub-carousel-1.sub-carousel-open(type='radio', name='sub-carousel', aria-hidden='true', hidden='', checked='checked')
+                .sub-carousel-item
+                  img(src='../images/sub-slider1.jpg')
+                  img(src='../images/sub-slider2.jpg')
+                  img(src='../images/sub-slider3.jpg')
+                  img(src='../images/sub-slider4.jpg')
+                  img(src='../images/sub-slider5.jpg')
+                input#sub-carousel-2.sub-carousel-open(type='radio', name='sub-carousel', aria-hidden='true', hidden='')
+                .sub-carousel-item
+                  img(src='../images/sub-slider1.jpg')
+                  img(src='../images/sub-slider2.jpg')
+                  img(src='../images/sub-slider3.jpg')
+                  img(src='../images/sub-slider4.jpg')
+                  img(src='../images/sub-slider5.jpg')
+                input#sub-carousel-3.sub-carousel-open(type='radio', name='sub-carousel', aria-hidden='true', hidden='')
+                .sub-carousel-item
+                  img(src='../images/sub-slider1.jpg')
+                  img(src='../images/sub-slider2.jpg')
+                  img(src='../images/sub-slider3.jpg')
+                  img(src='../images/sub-slider4.jpg')
+                  img(src='../images/sub-slider5.jpg')
+                label.carousel-control.prev.control-1(for='sub-carousel-3') &lsaquo;
+                label.carousel-control.next.control-1(for='sub-carousel-2') &rsaquo;
+                label.carousel-control.prev.control-2(for='sub-carousel-1') &lsaquo;
+                label.carousel-control.next.control-2(for='sub-carousel-3') &rsaquo;
+                label.carousel-control.prev.control-3(for='sub-carousel-2') &lsaquo;
+                label.carousel-control.next.control-3(for='sub-carousel-1') &rsaquo;
+
+
+
     include footer.pug
