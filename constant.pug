@@ -4,9 +4,9 @@ mixin social-media(src, alt)
         a(href="#")
             img(src=src alt=alt)
 
-mixin navbar-item(item)
+mixin navbar-item(href, item)
     li.navbar__item
-        a(href="#")=item
+        a(href=href)=item
 
 mixin list(...items)
     each item in items
