@@ -52,6 +52,31 @@
   font-size: 14px;
   color: #898989; }
 
+.not-found {
+  margin: 90px 0; }
+  .not-found img {
+    width: 100%;
+    margin-top: 20px; }
+  .not-found__title {
+    font-size: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f5bd10;
+    text-align: center; }
+  .not-found__desc {
+    color: #252525;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 35px; }
+  .not-found__col {
+    text-align: center;
+    margin: auto; }
+  .not-found__btn {
+    color: #fff;
+    padding: 9px 20px;
+    cursor: pointer;
+    background-color: #000; }
+
 @media (max-width: 768px) {
   .register-container .register__title, .register-container .register__btn,
   .register-container .register .checkbox {
@@ -63,6 +88,9 @@
     margin-left: 0 !important; }
   div.login div.checkbox a {
     position: static !important;
-    display: block; } }
+    display: block; }
+
+  .not-found__title {
+    font-size: 50px; } }
 
 /*# sourceMappingURL=register.css.map */

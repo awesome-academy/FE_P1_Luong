@@ -77,6 +77,39 @@
     }
 }
 
+.not-found {
+    margin: 90px 0;
+    img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    &__title {
+        font-size: 100px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #f5bd10;
+        text-align: center;
+    }
+
+    &__desc {
+        color: #252525;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    &__col {
+        text-align: center;
+
+        margin: auto;
+    }
+    &__btn {
+        color: #fff;
+        padding: 9px 20px;
+        cursor: pointer;
+        background-color: #000;
+    }
+}
+
 @media (max-width: 768px) {
     .register-container {
         .register {
@@ -100,6 +133,12 @@
                 position: static !important;
                 display: block;
             }
+        }
+    }
+
+    .not-found {
+        &__title {
+            font-size: 50px;
         }
     }
 }
