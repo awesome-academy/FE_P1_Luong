@@ -16,14 +16,24 @@
   padding: 12px 15px;
   margin: 20px 25px 20 0; }
 .register-container .register .checkbox {
+  position: relative;
   margin-bottom: 45px; }
   .register-container .register .checkbox input {
     cursor: pointer;
-    margin-right: 15px; }
+    margin-right: 15px;
+    width: auto; }
   .register-container .register .checkbox span {
     font-size: 14px;
     font-style: italic;
     color: #898989; }
+  .register-container .register .checkbox a {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 14px;
+    color: #f5bd10;
+    font-style: italic;
+    text-decoration: underline; }
 .register-container .register__btn {
   margin-top: 40px;
   margin-bottom: 90px; }
@@ -38,10 +48,21 @@
     background-color: #000; }
   .register-container .register__btn .submit {
     background-color: #f5bd10; }
+.register-container .register .login-desc {
+  font-size: 14px;
+  color: #898989; }
 
 @media (max-width: 768px) {
   .register-container .register__title, .register-container .register__btn,
   .register-container .register .checkbox {
-    margin-left: 15px; } }
+    margin-left: 15px; }
+
+  div.login .register__title,
+  div.login .register__btn,
+  div.login div.checkbox {
+    margin-left: 0 !important; }
+  div.login div.checkbox a {
+    position: static !important;
+    display: block; } }
 
 /*# sourceMappingURL=register.css.map */
