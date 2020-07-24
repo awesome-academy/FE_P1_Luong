@@ -77,6 +77,55 @@
     cursor: pointer;
     background-color: #000; }
 
+.shopping-cart.table1 {
+  overflow-x: auto; }
+
+.shopping-cart {
+  margin-bottom: 90px; }
+  .shopping-cart__table {
+    border-collapse: collapse;
+    width: 100%; }
+  .shopping-cart__item {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #252525;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    text-align: center; }
+    .shopping-cart__item strong {
+      cursor: pointer;
+      color: red; }
+  .shopping-cart__item.payment {
+    color: red;
+    font-size: 18px; }
+  .shopping-cart__table.table-2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+    .shopping-cart__table.table-2 .item1 {
+      width: 280px;
+      text-align: end; }
+    .shopping-cart__table.table-2 .item2 {
+      width: 200px;
+      text-align: end; }
+  .shopping-cart__btn {
+    text-align: end; }
+    .shopping-cart__btn button {
+      font-size: 14px;
+      color: #fff;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 12px 20px;
+      margin-left: 10px;
+      border: none;
+      outline: none; }
+    .shopping-cart__btn .next {
+      background-color: #000; }
+    .shopping-cart__btn .pay {
+      background-color: #f5bd10; }
+
 @media (max-width: 768px) {
   .register-container .register__title, .register-container .register__btn,
   .register-container .register .checkbox {

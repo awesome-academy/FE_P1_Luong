@@ -109,6 +109,71 @@
         background-color: #000;
     }
 }
+.shopping-cart.table1 {
+    overflow-x: auto;
+}
+.shopping-cart {
+    margin-bottom: 90px;
+    &__table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    &__item {
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #252525;
+        border: 1px solid #ddd;
+        padding: 10px 15px;
+        text-align: center;
+        strong {
+            cursor: pointer;
+            color: red;
+        }
+    }
+
+    &__item.payment {
+        color: red;
+        font-size: 18px;
+    }
+
+    &__table.table-2 {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+        .item1 {
+            width: 280px;
+            text-align: end;
+        }
+        .item2 {
+            width: 200px;
+            text-align: end;
+        }
+    }
+
+    &__btn {
+        text-align: end;
+        button {
+            font-size: 14px;
+            color: #fff;
+            text-transform: uppercase;
+            cursor: pointer;
+            padding: 12px 20px;
+            margin-left: 10px;
+            border: none;
+            outline: none;
+        }
+        .next {
+            background-color: #000;
+        }
+        .pay {
+            background-color: #f5bd10;
+        }
+    }
+}
 
 @media (max-width: 768px) {
     .register-container {
