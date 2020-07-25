@@ -2,7 +2,8 @@ include constant.pug
 head
   meta(charset='UTF-8')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
-  title Machine Company
+  block title
+    title Machine Company
   link(rel='stylesheet', href='../scss/responsive.css')
   link(rel='stylesheet', href='../scss/header.css')
   link(rel='stylesheet', href='../scss/style.css')
@@ -11,6 +12,7 @@ head
   link(rel='stylesheet', href='../scss/list-page.css')
   link(rel='stylesheet', href='../scss/detail.css')
   link(rel='stylesheet', href='../scss/register.css')
+  link(rel='stylesheet', href='../scss/blog.css')
 
 header
   .top-header

@@ -49,6 +49,10 @@ mixin sidebar-item(src, alt, href, title)
             img(src=src, alt=alt).four-icon
         a(href=href).title=title
 
+mixin sidebar-item-blog(href, title)
+    .sidebar__item     
+        a(href=href).title=title
+
 mixin sidebar-item--active(src, alt, href, title)
     .sidebar__item.sidebar__item--active
         .wrap-four-icon
