@@ -1,0 +1,21 @@
+
+mixin social-media(src, alt)
+    .social-media__item
+        a(href="#")
+            img(src=src alt=alt)
+
+mixin navbar-item(item)
+    li.navbar__item
+        a(href="#")=item
+
+mixin list(...items)
+    each item in items
+        .links__item
+            a(href="#")=item
+
+mixin article(src, alt, title)
+        .links__item.link
+            .wrap-icon
+                img(src=src, alt=alt)
+            a(href="#")=title
+
