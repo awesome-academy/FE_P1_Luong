@@ -1,4 +1,16 @@
 include constant.pug
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Machine Company
+  link(rel='stylesheet', href='../scss/responsive.css')
+  link(rel='stylesheet', href='../scss/header.css')
+  link(rel='stylesheet', href='../scss/style.css')
+  link(rel='stylesheet', href='../scss/footer.css')
+  link(rel='stylesheet', href='../scss/layout.css')
+  link(rel='stylesheet', href='../scss/list-page.css')
+  link(rel='stylesheet', href='../scss/detail.css')
+
 header
   .top-header
     // Social media / login-sign up
@@ -46,11 +58,11 @@ header
         ul.navbar__menu
             li.navbar__item.navbar--active
                 a(href="#") Trang chủ
-            +navbar-item('Giới thiệu')
-            +navbar-item('Sản phẩm')
-            +navbar-item('Tin khuyến mại')
-            +navbar-item('Dịch vụ')
-            +navbar-item('Liên hệ')
+            +navbar-item('#', 'Giới thiệu')
+            +navbar-item('#', 'Sản phẩm')
+            +navbar-item('#', 'Tin khuyến mại')
+            +navbar-item('#', 'Dịch vụ')
+            +navbar-item('#', 'Liên hệ')
         .cart
             img(src='../images/cart.png', alt='cart')
             .cart__number 0
