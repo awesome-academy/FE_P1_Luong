@@ -1,0 +1,149 @@
+include constant.pug
+
+include header.pug
+
+.container.category-container
+    .bread
+        a(href="#").bread__item Trang chủ 
+        a(href="#").bread__item.bread__item--active Danh mục sản phẩm
+
+    .row
+        .col-12.col-md-4.col-lg-3.sidebar-container
+            .sidebar
+                +sidebar-item--active("../images/danhmuc.png",
+                "four icon", "#", 'Danh mục sản phẩm')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", 'Máy in phun khổ lớn')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", 'Máy quét Canon 3D')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", 'Máy hàn điện Alunima')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", 'Máy khoan Decameta')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", 'Máy phay đa năng CNC')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", 'Máy mài, tiện DC 12V')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", 'Máy khoan, cắt CNC')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", 'Máy quay thông minh N3')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", 'Motor R34C đa dụng')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", 'Máy in laser mày 3D')
+            .sidebar
+                +sidebar-item--active("../images/price.png",
+                "price", "#", 'Tìm theo mức giá')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", '0 - 200.000 Đ (45)')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", '200.000 Đ - 500.000 Đ (45)')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", '500.000 - 1000.000 Đ (45)')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", '1000.000 - 2000.000 Đ (45)')
+                +sidebar-item("../images/four-square-gray.png",
+                "four icon", "#", 'Trên 2000.000 Đ (45)')
+            .sidebar
+                +sidebar-item--active("../images/color.png",
+                "Color", "#", 'Tìm theo màu sắc')
+                +sidebar-item("../images/red-color.png",
+                "four icon", "#", 'Màu đỏ (45)')
+                +sidebar-item("../images/yellow-color.png",
+                "four icon", "#", 'Màu vàng (45)')
+                +sidebar-item("../images/blue-color.png",
+                "four icon", "#", 'Màu xanh (45)')
+                +sidebar-item("../images/gray-clor.png",
+                "four icon", "#", 'Màu bạc (45)')
+                +sidebar-item("../images/black-color.png",
+                "four icon", "#", 'Màu đen (45)') 
+            .sidebar
+                +sidebar-item--active("../images/sale.png",
+                "Color", "#", 'Sản phẩm khuyến mại')
+                +sidebar-sale("../images/sale-product.jpg",
+                "four icon", "#", 'Máy khoan black decker loại 1', '1.550.000 Đ')
+                +sidebar-sale("../images/sale-product.jpg",
+                "four icon", "#", 'Máy khoan black decker loại 1', '1.550.000 Đ')
+                +sidebar-sale("../images/sale-product.jpg",
+                "four icon", "#", 'Máy khoan black decker loại 1', '1.550.000 Đ')
+                +sidebar-sale("../images/sale-product.jpg",
+                "four icon", "#", 'Máy khoan black decker loại 1', '1.550.000 Đ')
+                +sidebar-sale("../images/sale-product.jpg",
+                "four icon", "#", 'Máy khoan black decker loại 1', '1.550.000 Đ') 
+
+        .col-12.col-md-8.col-lg-9
+            .product-category
+                .product-category__filter
+                    form.sort
+                        label(for="product-category").text Sắp xếp theo: 
+                        select(name="product-category")#product-category
+                            option(value="Tên sảm phẩm") Tên sảm phẩm
+                            option(value="Máy khoan") Máy khoan
+                            option(value="Máy cắt") Máy cắt
+                .product-category__filter
+                    form.sort
+                        label(for="product-category").text Show: 
+                        select(name="product-category")#product-category
+                            option(value="number") 9
+                            option(value="number") 6
+                            option(value="Number") 3
+                .show-type
+                    .multiple
+                        img(src="../images/multiple-line.png", alt="multiple-line")
+                    .multiple
+                        img(src="../images/multiple-square.png", alt="multiple-square")
+
+            .new-order-container.category
+                .product-container
+                    +product2('../images/product.jpg',
+                    'product', 'Máy khoan black decker', 
+                    'Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commo...',
+                        '1.550.000 Đ',
+                    '#', 'Mua ngay', '#', 'Xem chi tiết')
+                    +product2('../images/product.jpg',
+                    'product', 'Máy khoan black decker', 
+                    'Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commo...',
+                        '1.550.000 Đ',
+                    '#', 'Mua ngay', '#', 'Xem chi tiết')
+                    +product2('../images/product.jpg',
+                    'product', 'Máy khoan black decker', 
+                    'Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commo...',
+                        '1.550.000 Đ',
+                    '#', 'Mua ngay', '#', 'Xem chi tiết')
+                    +product2('../images/product.jpg',
+                    'product', 'Máy khoan black decker', 
+                    'Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commo...',
+                        '1.550.000 Đ',
+                    '#', 'Mua ngay', '#', 'Xem chi tiết')
+                    +product2('../images/product.jpg',
+                    'product', 'Máy khoan black decker', 
+                    'Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commo...',
+                        '1.550.000 Đ',
+                    '#', 'Mua ngay', '#', 'Xem chi tiết')
+                    +product2('../images/product.jpg',
+                    'product', 'Máy khoan black decker', 
+                    'Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commo...',
+                        '1.550.000 Đ',
+                    '#', 'Mua ngay', '#', 'Xem chi tiết')
+                    +product2('../images/product.jpg',
+                    'product', 'Máy khoan black decker', 
+                    'Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commo...',
+                        '1.550.000 Đ',
+                    '#', 'Mua ngay', '#', 'Xem chi tiết')
+                    +product2('../images/product.jpg',
+                    'product', 'Máy khoan black decker', 
+                    'Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commoLorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore commo...',
+                        '1.550.000 Đ',
+                    '#', 'Mua ngay', '#', 'Xem chi tiết')
+            
+            .pagination
+                a(href="#").pagination__item Trang trước
+                a(href="#").pagination__item.pagination__item--select 1
+                a(href="#").pagination__item 2
+                a(href="#").pagination__item 3
+                a(href="#").pagination__item Trang sau
+
+
+
+include footer.pug

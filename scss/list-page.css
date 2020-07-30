@@ -1,0 +1,75 @@
+@charset "UTF-8";
+div.category-container {
+  margin-bottom: 100px; }
+  div.category-container .bread {
+    display: flex;
+    margin: 35px 0; }
+    div.category-container .bread__item {
+      font-size: 14px;
+      color: #363636; }
+    div.category-container .bread__item:first-child::before {
+      content: "";
+      margin: 0; }
+    div.category-container .bread__item--active {
+      color: #000;
+      font-weight: 500; }
+    div.category-container .bread__item::before {
+      content: "❯";
+      margin: 0 10px; }
+  div.category-container .product-category {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 60px;
+    border-bottom: 1px solid #e1e1e1; }
+    div.category-container .product-category__filter {
+      margin-right: 30px; }
+      div.category-container .product-category__filter .sort .text {
+        font-size: 14px;
+        color: #363636; }
+      div.category-container .product-category__filter .sort #product-category {
+        padding: 4px 10px;
+        width: 150px;
+        margin-left: 5px;
+        border: 1px solid #e1e1e1;
+        outline: none;
+        border-color: #898989 !important;
+        color: #898989; }
+        div.category-container .product-category__filter .sort #product-category option {
+          font-size: 14px;
+          color: #898989; }
+    div.category-container .product-category .show-type {
+      display: flex;
+      position: absolute;
+      right: 0; }
+      div.category-container .product-category .show-type .multiple {
+        border: 1px solid #e1e1e1;
+        padding: 4px;
+        margin-left: 10px;
+        cursor: pointer; }
+  div.category-container .new-order-container.category .product-container .product {
+    margin-bottom: 30px; }
+    div.category-container .new-order-container.category .product-container .product__img {
+      width: 25%; }
+    div.category-container .new-order-container.category .product-container .product .product-inner {
+      width: 75%; }
+      div.category-container .new-order-container.category .product-container .product .product-inner .desc {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; }
+  div.category-container .pagination {
+    display: flex;
+    justify-content: flex-end; }
+    div.category-container .pagination__item {
+      padding: 6px 13px;
+      margin-right: 5px;
+      color: #898989;
+      font-size: 13px;
+      border: 1px solid #ccc; }
+    div.category-container .pagination__item--select {
+      color: #fff;
+      background-color: #f5bd10; }
+
+/*# sourceMappingURL=list-page.css.map */
