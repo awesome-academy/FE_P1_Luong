@@ -3,6 +3,7 @@
 }
 
 footer {
+    background-color: #f7f7f7;
     .container {
         .wrap-links {
             border-bottom: 1px solid #e1e1e1;
@@ -150,8 +151,6 @@ footer {
             &__col {
                 justify-content: center;
                 text-align: center;
-                &__copyright {
-                }
 
                 .navbar-footer {
                     padding-inline-start: 0;
@@ -169,9 +168,6 @@ footer {
                         }
                     }
                 }
-            }
-
-            &__col:last-child {
             }
         }
     }

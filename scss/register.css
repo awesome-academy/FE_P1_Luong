@@ -1,0 +1,47 @@
+.register-container .register__title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #252525;
+  margin-bottom: 40px; }
+.register-container .register__form .text {
+  font-size: 14px; }
+  .register-container .register__form .text strong {
+    color: red;
+    margin-left: 3px; }
+.register-container .register__form input {
+  border: 1px solid #e1e1e1;
+  outline: none;
+  width: 100%;
+  padding: 12px 15px;
+  margin: 20px 25px 20 0; }
+.register-container .register .checkbox {
+  margin-bottom: 45px; }
+  .register-container .register .checkbox input {
+    cursor: pointer;
+    margin-right: 15px; }
+  .register-container .register .checkbox span {
+    font-size: 14px;
+    font-style: italic;
+    color: #898989; }
+.register-container .register__btn {
+  margin-top: 40px;
+  margin-bottom: 90px; }
+  .register-container .register__btn a {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 9px 20px;
+    margin-right: 20px; }
+  .register-container .register__btn .back {
+    background-color: #000; }
+  .register-container .register__btn .submit {
+    background-color: #f5bd10; }
+
+@media (max-width: 768px) {
+  .register-container .register__title, .register-container .register__btn,
+  .register-container .register .checkbox {
+    margin-left: 15px; } }
+
+/*# sourceMappingURL=register.css.map */
