@@ -4,9 +4,9 @@ mixin social-media(src, alt)
         a(href="#")
             img(src=src alt=alt)
 
-mixin navbar-item(item)
+mixin navbar-item(href, item)
     li.navbar__item
-        a(href="#")=item
+        a(href=href)=item
 
 mixin list(...items)
     each item in items
@@ -23,3 +23,88 @@ mixin article(src, alt, title)
                 img(src=src, alt=alt)
             a(href="#")=title
 
+mixin slider-sidebar(src, alt, title, desc)
+    .slider__sidebar__detail
+              img(src=src, alt=alt)
+              .slider__sidebar__detail__info
+                .title=title
+                .desc=desc
+
+mixin slider-sidebar--active(src, alt, title, desc)
+    .slider__sidebar__detail.slider__sidebar__detail--active
+              img(src=src, alt=alt)
+              .slider__sidebar__detail__info
+                .title=title
+                .desc=desc
+
+mixin title-genral(src=src, alt=alt, title)
+    .wrap-title-general
+        .wrap-four-icon
+            img(src=src, alt=alt).four-icon
+        .title-general=title
+
+mixin sidebar-item(src, alt, href, title)
+    .sidebar__item
+        .wrap-four-icon
+            img(src=src, alt=alt).four-icon
+        a(href=href).title=title
+
+mixin sidebar-item--active(src, alt, href, title)
+    .sidebar__item.sidebar__item--active
+        .wrap-four-icon
+            img(src=src, alt=alt).four-icon
+        a(href=href).title=title
+    
+mixin sidebar-sale(src, alt, href, title, price)
+    .sidebar__item.sidebar__sale
+        .wrap-four-icon
+            img(src=src, alt=alt).four-icon
+        .info
+            a(href=href).title=title
+            .price=price
+
+mixin rating
+    .rating-container
+        .rating.rating2
+            a(href='#5', title='Give 5 stars').rating__item &starf;
+            a(href='#4', title='Give 4 stars').rating__item &starf;
+            a(href='#3', title='Give 3 stars').rating__item &starf;
+            a(href='#2', title='Give 2 stars').rating__item &starf;
+            a(href='#1', title='Give 1 star').rating__item &starf;
+        .rating-number (12 đánh giá)
+
+mixin product(src, alt, price, name, href1, btn1, href2, btn2)
+    .product
+        .product__item
+            img(src=src, alt=alt)
+            .product__price=price
+            .product__name=name
+            +rating
+            .product__btn
+                a(href=href1).buy-now=btn1
+                a(href=href2).view-detail=btn2
+
+mixin product2(src, alt, name, desc, price,  href1, btn1, href2, btn2)
+    .product
+        .product__item
+            .product__img
+                img(src=src, alt=alt)
+            .product-inner  
+                .product__name=name 
+                +rating 
+                .desc=desc
+                .product__price=price
+                .product__btn
+                    a(href=href1).buy-now=btn1
+                    a(href=href2).view-detail=btn2
+                    
+
+mixin tab-btn
+    button.tab__btn.tab__btn--active Máy khoan
+    button.tab__btn Máy in 3D
+    button.tab__btn Máy CNC
+    button.tab__btn Máy tiện
+    button.tab__btn Máy khác
+
+
+            
